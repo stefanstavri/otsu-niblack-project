@@ -306,9 +306,9 @@ if len(sys.argv) > 1:
 # Imagine pe care s-a aplicat threshold global
 try:
     threshold_global = calcul_threshold_global(img)
-    print("Threshold global aplicat              OK")
+    print("Threshold global aplicat              👍")
 except Exception as e:
-    print("Threshold global aplicat              ERR")
+    print("Threshold global aplicat              ❌")
     print("Error details:", e)
 img_threshold_global = aplicare_threshold(img, threshold_global)
 
@@ -316,9 +316,9 @@ img_threshold_global = aplicare_threshold(img, threshold_global)
 # Algoritm Niblack
 try:
     img_threshold_niblack = threshold_niblack(img, 25, 0.3)
-    print("Algoritm Niblack aplicat              OK")
+    print("Algoritm Niblack aplicat              👍")
 except Exception as e:
-    print("Algoritm Niblack aplicat              ERR")
+    print("Algoritm Niblack aplicat              ❌")
     print("Error details:", e)
 
 
@@ -326,9 +326,9 @@ except Exception as e:
 hist = calculare_histograma(img)
 try:
     threshold_otsuV1 = threshold_otsu_global(hist)
-    print("Algoritm Otsu Global aplicat          OK")
+    print("Algoritm Otsu Global aplicat          👍")
 except Exception as e:
-    print("Algoritm Otsu Global aplicat          ERR")
+    print("Algoritm Otsu Global aplicat          ❌")
     print("Error details:", e)
 img_threshold_otsu_global = aplicare_threshold(img, threshold_otsuV1)
 
@@ -336,9 +336,9 @@ img_threshold_otsu_global = aplicare_threshold(img, threshold_otsuV1)
 # Algoritm Otsu Local
 try:
     img_threshold_otsu_local = threshold_otsu_local(img, 9)
-    print("Algoritm Otsu Local aplicat           OK")
+    print("Algoritm Otsu Local aplicat           👍")
 except Exception as e:
-    print("Algoritm Otsu Local aplicat           ERR")
+    print("Algoritm Otsu Local aplicat           ❌")
     print("Error details:", e)
 
 

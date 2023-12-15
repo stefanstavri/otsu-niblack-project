@@ -16,6 +16,6 @@ Run
 
 If every implemented algorithm worked just fine, you will see this message in the terminal:
 ```bash
-Algoritm <ALGO_NAME> aplicat              OK
+Algoritm <ALGO_NAME> aplicat              👍
 ```
 Then, a *Figure 1* should pop up showing you all the processed images.

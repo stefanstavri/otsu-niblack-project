@@ -11,7 +11,7 @@ file_name="2_5${photo_number}.jpg"
 # Check if the file exists
 if [[ -f $file_name ]]; then
     # Run the Python script with the specified image
-    python3 Proiect_TDAV.py $file_name
+    python3 Otsu_Niblack.py $file_name
 else
     echo "File does not exist: $file_name"
 fi
